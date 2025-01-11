@@ -13,8 +13,11 @@ const testFn2 = sum_to_n_a(25);
 console.log(testFn2);
 
 const sum_to_n_c = function (n) {
-  if (n === 1) return 1;
-  return n + sum_to_n_c(n - 1);
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    total += i;
+  }
+  return total;
 };
 const testFn3 = sum_to_n_c(25);
 console.log(testFn3);

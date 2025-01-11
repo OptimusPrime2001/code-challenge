@@ -43,7 +43,7 @@ function App() {
       console.debug('🚀 ~ fetchExchangeRate ~ error:', error);
       toast({
         title: 'Uh oh! Something went wrong.',
-        description: 'There was a problem with your request.',
+        description: 'There was a problem with your request, change the currency for continute.',
       });
     }
   };
